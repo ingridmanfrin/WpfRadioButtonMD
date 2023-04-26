@@ -1,0 +1,44 @@
+﻿<Window x:Class="WpfRadioButtonMD.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfRadioButtonMD"
+        mc:Ignorable="d"
+        
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        
+        Title="Aula 6 - RadioButton" Height="350" Width="525">
+    <StackPanel>
+        <TextBlock Margin="10"
+                   FontSize="16"
+                   FontWeight="Bold"
+                   Text="Opções RadioButton"></TextBlock>
+        <RadioButton Margin="10,2" GroupName="PrimeiraSelecao" IsChecked="True">Primeira opção</RadioButton>
+        <RadioButton Margin="10,2"
+                     GroupName="PrimeiraSelecao">Segunda opção</RadioButton>
+        <RadioButton Margin="10,2"
+                     GroupName="PrimeiraSelecao">Terceira opção</RadioButton>
+        <TextBlock Margin="10"
+                   FontSize="16"
+                   FontWeight="Bold"
+                   Text="Selecione uma opção"></TextBlock>
+        <RadioButton Margin="5"
+                     GroupName="SegundaSelecao"
+                     IsChecked="True"
+                     Content="Sim"></RadioButton>
+        <RadioButton Margin="5"
+                     GroupName="SegundaSelecao"
+                     Content="Não"></RadioButton>
+        <RadioButton Margin="5"
+                     GroupName="SegundaSelecao"
+                     Content="Talvez"></RadioButton>
+    </StackPanel>
+</Window>
